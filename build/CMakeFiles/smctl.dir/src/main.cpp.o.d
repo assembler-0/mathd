@@ -1,6 +1,6 @@
 CMakeFiles/smctl.dir/src/main.cpp.o: \
   /data/data/com.termux/files/home/smctl/src/main.cpp \
-  /data/data/com.termux/files/home/smctl/src/../include/new.hpp \
+  /data/data/com.termux/files/home/smctl/src/../include/smctl_calculator.hpp \
   /data/data/com.termux/files/home/smctl/src/../include/exprtk.hpp \
   /data/data/com.termux/files/usr/include/c++/v1/algorithm \
   /data/data/com.termux/files/usr/include/c++/v1/__assert \
@@ -892,4 +892,24 @@ CMakeFiles/smctl.dir/src/main.cpp.o: \
   /data/data/com.termux/files/usr/include/c++/v1/__filesystem/recursive_directory_iterator.h \
   /data/data/com.termux/files/usr/include/c++/v1/__filesystem/u8path.h \
   /data/data/com.termux/files/home/smctl/src/../include/termcolor.hpp \
-  /data/data/com.termux/files/usr/include/c++/v1/iostream
+  /data/data/com.termux/files/usr/include/c++/v1/iostream \
+  /data/data/com.termux/files/home/smctl/src/../include/fmt/core.h \
+  /data/data/com.termux/files/home/smctl/src/../include/fmt/format.h \
+  /data/data/com.termux/files/home/smctl/src/../include/fmt/base.h \
+  /data/data/com.termux/files/home/smctl/src/../include/CLI11.hpp \
+  /data/data/com.termux/files/usr/include/c++/v1/numeric \
+  /data/data/com.termux/files/usr/include/c++/v1/__numeric/accumulate.h \
+  /data/data/com.termux/files/usr/include/c++/v1/__numeric/adjacent_difference.h \
+  /data/data/com.termux/files/usr/include/c++/v1/__numeric/exclusive_scan.h \
+  /data/data/com.termux/files/usr/include/c++/v1/__numeric/gcd_lcm.h \
+  /data/data/com.termux/files/usr/include/c++/v1/__numeric/inclusive_scan.h \
+  /data/data/com.termux/files/usr/include/c++/v1/__numeric/inner_product.h \
+  /data/data/com.termux/files/usr/include/c++/v1/__numeric/iota.h \
+  /data/data/com.termux/files/usr/include/c++/v1/__numeric/midpoint.h \
+  /data/data/com.termux/files/usr/include/c++/v1/__numeric/partial_sum.h \
+  /data/data/com.termux/files/usr/include/c++/v1/__numeric/pstl_reduce.h \
+  /data/data/com.termux/files/usr/include/c++/v1/__numeric/reduce.h \
+  /data/data/com.termux/files/usr/include/c++/v1/__numeric/transform_exclusive_scan.h \
+  /data/data/com.termux/files/usr/include/c++/v1/__numeric/transform_inclusive_scan.h \
+  /data/data/com.termux/files/usr/include/c++/v1/sstream \
+  /data/data/com.termux/files/usr/include/c++/v1/codecvt

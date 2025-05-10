@@ -31,3 +31,5 @@ target_compile_options(${PROJECT_NAME} PRIVATE -Wall -Wextra -pedantic)
 
 # Optionally, add link libraries (uncomment and modify if needed)
 # target_link_libraries(${PROJECT_NAME} PRIVATE some_library)
+#find_package(fmt REQUIRED)
+#target_link_libraries(smctl PRIVATE fmt::fmt)
