@@ -37,9 +37,9 @@ void clean_build_directory() {
         size_t Sremoved_count = 0;
         for (const auto& entry : fs::directory_iterator(BUILD_DIR)) {
             fs::remove_all(entry.path()); // Safely remove files and subdirectories within BUILD_DIR
-            removed_count++;
+            Sremoved_count++;
         }
-        if (removed_count > 0) {
+        if (Sremoved_count > 0) {
             fmt::print("Cleaned contents of {} directory.\n", BUILD_DIR);
         } else {
             fmt::print("{} directory was empty or only contained dotfiles not matched by '/*'.\n", BUILD_DIR);
