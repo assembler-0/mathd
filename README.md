@@ -1,5 +1,5 @@
-# smctl - system manager written in C++ designed for Arch-based systems
-## Features list (some might not yet implemented):
+# ___smctl - system manager written in C++ designed for Arch-based systems___
+### Features list (some might not yet implemented):
 - Calculator
 - Calculator - High precision
 - Cache cleaner
