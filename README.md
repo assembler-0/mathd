@@ -3,6 +3,7 @@ __Target distros:__
 - Arch-based distro
 - _GNU/Linux_
 - _Windows_
+***
 __Features list (some might not yet implemented):__
 - Calculator
 - Calculator - High precision
@@ -14,6 +15,7 @@ __Features list (some might not yet implemented):__
 - File marker & finder
 - Update system as a service
 - Debloat
+***
 __Usage:__
 - Linux: `make install` in /build
 - Windows: precompiled binary in /build/bin
