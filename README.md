@@ -16,6 +16,7 @@ __Features list (some might not yet implemented):__
 - Debloat
 ***
 __Usage:__
-- Linux: `make install` in /build
-- Windows: precompiled binary in /build/bin
-- Compile with Make/Ninja (for Ninja, please regenerate build files with cmake).
+1. Run `setup.sh` (if you want a clean build, if you do not, skip step 2.)
+2. Generate build files
+3. Compile with Make/Ninja.
+4. Run `make install`
