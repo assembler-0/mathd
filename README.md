@@ -1,3 +1,12 @@
-# HexaCore
-HexaCore is an multi-feature CLI graphing calculator
-powered by CLI11 + exprtk
+# smctl - system manager written in C++ designed for Arch-based systems
+Features list:
+-[x] Calculator
+-[] Calculator - High precision
+-[] Cache cleaner
+-[] TUI
+-[] Temporary files cleaner
+-[] System resources manager
+-[] System autotune
+-[] File marker & finder
+-[] Update system as a service
+-[] Debloat
