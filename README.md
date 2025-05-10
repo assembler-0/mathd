@@ -1,2 +1,3 @@
-# smctl
-smctl - SystemManagerCTL - a performant system manager designed to be fully compatible with Arch-based distros
+# HexaCore
+HexaCore is an multi-feature CLI graphing calculator
+powered by CLI11 + exprtk

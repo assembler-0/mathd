@@ -1,0 +1,7 @@
+# ninja log v6
+2	90	1746281038297166423	CMakeFiles/MyProject.dir/src/test.cpp.o	eed61dff976f9c3f
+27	64066	1746281357085166301	CMakeFiles/MyProject.dir/src/main.cpp.o	466fbf0d857ae966
+64068	64496	1746281421125166277	bin/MyProject	63cbb12f81c718cf
+22	86	1746316065028121332	CMakeFiles/MyProject.dir/src/test.cpp.o	1b3ac60a8ea7a7f1
+21	52014	1746316065028121332	CMakeFiles/MyProject.dir/src/main.cpp.o	cbe035daafef54ea
+52015	52252	1746316117020121312	bin/MyProject	63cbb12f81c718cf
