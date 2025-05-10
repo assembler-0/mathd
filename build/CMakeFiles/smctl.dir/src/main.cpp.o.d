@@ -1,7 +1,7 @@
 CMakeFiles/smctl.dir/src/main.cpp.o: \
-  /data/data/com.termux/files/home/HexaCore/src/main.cpp \
-  /data/data/com.termux/files/home/HexaCore/src/../include/smctl_calc.hpp \
-  /data/data/com.termux/files/home/HexaCore/src/../include/exprtk.hpp \
+  /data/data/com.termux/files/home/smctl/src/main.cpp \
+  /data/data/com.termux/files/home/smctl/src/../include/new.hpp \
+  /data/data/com.termux/files/home/smctl/src/../include/exprtk.hpp \
   /data/data/com.termux/files/usr/include/c++/v1/algorithm \
   /data/data/com.termux/files/usr/include/c++/v1/__assert \
   /data/data/com.termux/files/usr/include/c++/v1/__config \
@@ -891,5 +891,5 @@ CMakeFiles/smctl.dir/src/main.cpp.o: \
   /data/data/com.termux/files/usr/include/c++/v1/__filesystem/path_iterator.h \
   /data/data/com.termux/files/usr/include/c++/v1/__filesystem/recursive_directory_iterator.h \
   /data/data/com.termux/files/usr/include/c++/v1/__filesystem/u8path.h \
-  /data/data/com.termux/files/home/HexaCore/src/../include/termcolor.hpp \
+  /data/data/com.termux/files/home/smctl/src/../include/termcolor.hpp \
   /data/data/com.termux/files/usr/include/c++/v1/iostream

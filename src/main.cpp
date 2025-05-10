@@ -1,5 +1,6 @@
-#include "../include/smctl_calc.hpp"
+#include "../include/new.hpp"
 int main(){
-  init();
+  Calculator scicalc;
+  scicalc.run();
   return 0;
 }

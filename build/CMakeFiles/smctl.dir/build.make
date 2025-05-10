@@ -53,10 +53,10 @@ RM = /data/data/com.termux/files/usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /data/data/com.termux/files/home/HexaCore
+CMAKE_SOURCE_DIR = /data/data/com.termux/files/home/smctl
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /data/data/com.termux/files/home/HexaCore/build
+CMAKE_BINARY_DIR = /data/data/com.termux/files/home/smctl/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/smctl.dir/depend.make
@@ -73,47 +73,31 @@ CMakeFiles/smctl.dir/codegen:
 .PHONY : CMakeFiles/smctl.dir/codegen
 
 CMakeFiles/smctl.dir/src/main.cpp.o: CMakeFiles/smctl.dir/flags.make
-CMakeFiles/smctl.dir/src/main.cpp.o: /data/data/com.termux/files/home/HexaCore/src/main.cpp
+CMakeFiles/smctl.dir/src/main.cpp.o: /data/data/com.termux/files/home/smctl/src/main.cpp
 CMakeFiles/smctl.dir/src/main.cpp.o: CMakeFiles/smctl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/data/data/com.termux/files/home/HexaCore/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/smctl.dir/src/main.cpp.o"
-	/data/data/com.termux/files/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/smctl.dir/src/main.cpp.o -MF CMakeFiles/smctl.dir/src/main.cpp.o.d -o CMakeFiles/smctl.dir/src/main.cpp.o -c /data/data/com.termux/files/home/HexaCore/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/data/data/com.termux/files/home/smctl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/smctl.dir/src/main.cpp.o"
+	/data/data/com.termux/files/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/smctl.dir/src/main.cpp.o -MF CMakeFiles/smctl.dir/src/main.cpp.o.d -o CMakeFiles/smctl.dir/src/main.cpp.o -c /data/data/com.termux/files/home/smctl/src/main.cpp
 
 CMakeFiles/smctl.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/smctl.dir/src/main.cpp.i"
-	/data/data/com.termux/files/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data/data/com.termux/files/home/HexaCore/src/main.cpp > CMakeFiles/smctl.dir/src/main.cpp.i
+	/data/data/com.termux/files/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data/data/com.termux/files/home/smctl/src/main.cpp > CMakeFiles/smctl.dir/src/main.cpp.i
 
 CMakeFiles/smctl.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/smctl.dir/src/main.cpp.s"
-	/data/data/com.termux/files/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data/data/com.termux/files/home/HexaCore/src/main.cpp -o CMakeFiles/smctl.dir/src/main.cpp.s
-
-CMakeFiles/smctl.dir/src/test.cpp.o: CMakeFiles/smctl.dir/flags.make
-CMakeFiles/smctl.dir/src/test.cpp.o: /data/data/com.termux/files/home/HexaCore/src/test.cpp
-CMakeFiles/smctl.dir/src/test.cpp.o: CMakeFiles/smctl.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/data/data/com.termux/files/home/HexaCore/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/smctl.dir/src/test.cpp.o"
-	/data/data/com.termux/files/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/smctl.dir/src/test.cpp.o -MF CMakeFiles/smctl.dir/src/test.cpp.o.d -o CMakeFiles/smctl.dir/src/test.cpp.o -c /data/data/com.termux/files/home/HexaCore/src/test.cpp
-
-CMakeFiles/smctl.dir/src/test.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/smctl.dir/src/test.cpp.i"
-	/data/data/com.termux/files/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data/data/com.termux/files/home/HexaCore/src/test.cpp > CMakeFiles/smctl.dir/src/test.cpp.i
-
-CMakeFiles/smctl.dir/src/test.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/smctl.dir/src/test.cpp.s"
-	/data/data/com.termux/files/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data/data/com.termux/files/home/HexaCore/src/test.cpp -o CMakeFiles/smctl.dir/src/test.cpp.s
+	/data/data/com.termux/files/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data/data/com.termux/files/home/smctl/src/main.cpp -o CMakeFiles/smctl.dir/src/main.cpp.s
 
 # Object files for target smctl
 smctl_OBJECTS = \
-"CMakeFiles/smctl.dir/src/main.cpp.o" \
-"CMakeFiles/smctl.dir/src/test.cpp.o"
+"CMakeFiles/smctl.dir/src/main.cpp.o"
 
 # External object files for target smctl
 smctl_EXTERNAL_OBJECTS =
 
 bin/smctl: CMakeFiles/smctl.dir/src/main.cpp.o
-bin/smctl: CMakeFiles/smctl.dir/src/test.cpp.o
 bin/smctl: CMakeFiles/smctl.dir/build.make
 bin/smctl: CMakeFiles/smctl.dir/compiler_depend.ts
 bin/smctl: CMakeFiles/smctl.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/data/data/com.termux/files/home/HexaCore/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable bin/smctl"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/data/data/com.termux/files/home/smctl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable bin/smctl"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/smctl.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -125,6 +109,6 @@ CMakeFiles/smctl.dir/clean:
 .PHONY : CMakeFiles/smctl.dir/clean
 
 CMakeFiles/smctl.dir/depend:
-	cd /data/data/com.termux/files/home/HexaCore/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /data/data/com.termux/files/home/HexaCore /data/data/com.termux/files/home/HexaCore /data/data/com.termux/files/home/HexaCore/build /data/data/com.termux/files/home/HexaCore/build /data/data/com.termux/files/home/HexaCore/build/CMakeFiles/smctl.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /data/data/com.termux/files/home/smctl/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /data/data/com.termux/files/home/smctl /data/data/com.termux/files/home/smctl /data/data/com.termux/files/home/smctl/build /data/data/com.termux/files/home/smctl/build /data/data/com.termux/files/home/smctl/build/CMakeFiles/smctl.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/smctl.dir/depend
 

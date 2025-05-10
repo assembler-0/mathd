@@ -4,7 +4,7 @@
 # compile CXX with /data/data/com.termux/files/usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/data/data/com.termux/files/home/HexaCore/include
+CXX_INCLUDES = -I/data/data/com.termux/files/home/smctl/include
 
-CXX_FLAGS = -O2 -g -DNDEBUG -std=gnu++11 -Wall -Wextra -pedantic
+CXX_FLAGS = -O2 -g -DNDEBUG -std=gnu++20 -Wall -Wextra -pedantic
 

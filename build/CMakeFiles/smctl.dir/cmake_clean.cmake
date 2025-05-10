@@ -2,8 +2,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/smctl.dir/link.d"
   "CMakeFiles/smctl.dir/src/main.cpp.o"
   "CMakeFiles/smctl.dir/src/main.cpp.o.d"
-  "CMakeFiles/smctl.dir/src/test.cpp.o"
-  "CMakeFiles/smctl.dir/src/test.cpp.o.d"
   "bin/smctl"
   "bin/smctl.pdb"
 )

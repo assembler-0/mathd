@@ -8,8 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/data/data/com.termux/files/home/HexaCore/src/main.cpp" "CMakeFiles/smctl.dir/src/main.cpp.o" "gcc" "CMakeFiles/smctl.dir/src/main.cpp.o.d"
-  "/data/data/com.termux/files/home/HexaCore/src/test.cpp" "CMakeFiles/smctl.dir/src/test.cpp.o" "gcc" "CMakeFiles/smctl.dir/src/test.cpp.o.d"
+  "/data/data/com.termux/files/home/smctl/src/main.cpp" "CMakeFiles/smctl.dir/src/main.cpp.o" "gcc" "CMakeFiles/smctl.dir/src/main.cpp.o.d"
   "" "bin/smctl" "gcc" "CMakeFiles/smctl.dir/link.d"
   )
 

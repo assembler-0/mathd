@@ -1,7 +1,7 @@
-/data/data/com.termux/files/home/HexaCore/build/CMakeFiles/smctl.dir
-/data/data/com.termux/files/home/HexaCore/build/CMakeFiles/edit_cache.dir
-/data/data/com.termux/files/home/HexaCore/build/CMakeFiles/rebuild_cache.dir
-/data/data/com.termux/files/home/HexaCore/build/CMakeFiles/list_install_components.dir
-/data/data/com.termux/files/home/HexaCore/build/CMakeFiles/install.dir
-/data/data/com.termux/files/home/HexaCore/build/CMakeFiles/install/local.dir
-/data/data/com.termux/files/home/HexaCore/build/CMakeFiles/install/strip.dir
+/data/data/com.termux/files/home/smctl/build/CMakeFiles/smctl.dir
+/data/data/com.termux/files/home/smctl/build/CMakeFiles/edit_cache.dir
+/data/data/com.termux/files/home/smctl/build/CMakeFiles/rebuild_cache.dir
+/data/data/com.termux/files/home/smctl/build/CMakeFiles/list_install_components.dir
+/data/data/com.termux/files/home/smctl/build/CMakeFiles/install.dir
+/data/data/com.termux/files/home/smctl/build/CMakeFiles/install/local.dir
+/data/data/com.termux/files/home/smctl/build/CMakeFiles/install/strip.dir

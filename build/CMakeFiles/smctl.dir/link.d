@@ -1,7 +1,6 @@
 bin/smctl: \
  /data/data/com.termux/files/usr/lib/crtbegin_dynamic.o \
  CMakeFiles/smctl.dir/src/main.cpp.o \
- CMakeFiles/smctl.dir/src/test.cpp.o \
  /data/data/com.termux/files/usr/lib/libc++_shared.so \
  /data/data/com.termux/files/usr/lib/clang/20/lib/linux/libclang_rt.builtins-aarch64-android.a \
  /data/data/com.termux/files/usr/lib/libunwind.a \
@@ -13,8 +12,6 @@ bin/smctl: \
 /data/data/com.termux/files/usr/lib/crtbegin_dynamic.o:
 
 CMakeFiles/smctl.dir/src/main.cpp.o:
-
-CMakeFiles/smctl.dir/src/test.cpp.o:
 
 /data/data/com.termux/files/usr/lib/libc++_shared.so:
 

@@ -1,3 +1,0 @@
-/data/data/com.termux/files/usr/bin/cmake -E rm -f CMakeFiles/smctl.dir/objects.a
-/data/data/com.termux/files/usr/bin/x86_64-w64-mingw32-llvm-ar qc CMakeFiles/smctl.dir/objects.a @CMakeFiles/smctl.dir/objects1.rsp
-/data/data/com.termux/files/usr/bin/x86_64-w64-mingw32-clang++ -Wl,--whole-archive CMakeFiles/smctl.dir/objects.a -Wl,--no-whole-archive -o /data/data/com.termux/files/home/HexaCore/build/bin/smctl.exe -Wl,--out-implib,libsmctl.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/smctl.dir/linkLibs.rsp
