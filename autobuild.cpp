@@ -29,23 +29,6 @@ void execute_command(const std::string& command_str, const std::string& descript
 void clean_build_directory() {
     std::cout << "Preparing to clean " << BUILD_DIR << "/* ..." << std::endl;
     if (fs::exists(BUILD_DIR)) {
-<<<<<<< HEAD
-        // More robust way than "rm -rf build/*" which might fail or have unintended consequences
-        // This removes all contents of BUILD_DIR but not BUILD_DIR itself.
-        // If BUILD_DIR itself should be removed and recreated:
-        // fs::remove_all(BUILD_DIR);
-        // fs::create_directory(BUILD_DIR);
-        // For now, let's replicate "rm -rf build/*" meaning:
-        size_t Sremoved_count = 0;
-        for (const auto& entry : fs::directory_iterator(BUILD_DIR)) {
-            fs::remove_all(entry.path()); // Safely remove files and subdirectories within BUILD_DIR
-            Sremoved_count++;
-        }
-        if (Sremoved_count > 0) {
-            fmt::print("Cleaned contents of {} directory.\n", BUILD_DIR);
-        } else {
-            fmt::print("{} directory was empty or only contained dotfiles not matched by '/*'.\n", BUILD_DIR);
-=======
         size_t removed_count = 0;
         try {
             for (const auto& entry : fs::directory_iterator(BUILD_DIR)) {
@@ -62,7 +45,6 @@ void clean_build_directory() {
             // Decide if this is fatal. For a clean step, maybe just warn.
             // For now, let's continue, as CMake can often recover.
             // If critical, add: std::exit(EXIT_FAILURE);
->>>>>>> 09d297c08247a2735b63f5c04a8df15277076c5c
         }
     } else {
         std::cout << BUILD_DIR << " directory does not exist. Creating it." << std::endl;
