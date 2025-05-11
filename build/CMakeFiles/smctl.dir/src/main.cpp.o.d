@@ -893,9 +893,9 @@ CMakeFiles/smctl.dir/src/main.cpp.o: \
   /data/data/com.termux/files/usr/include/c++/v1/__filesystem/u8path.h \
   /data/data/com.termux/files/home/smctl/src/../include/termcolor.hpp \
   /data/data/com.termux/files/usr/include/c++/v1/iostream \
-  /data/data/com.termux/files/home/smctl/src/../include/fmt/core.h \
-  /data/data/com.termux/files/home/smctl/src/../include/fmt/format.h \
-  /data/data/com.termux/files/home/smctl/src/../include/fmt/base.h \
+  /data/data/com.termux/files/usr/include/fmt/core.h \
+  /data/data/com.termux/files/usr/include/fmt/format.h \
+  /data/data/com.termux/files/usr/include/fmt/base.h \
   /data/data/com.termux/files/home/smctl/src/../include/CLI11.hpp \
   /data/data/com.termux/files/usr/include/c++/v1/numeric \
   /data/data/com.termux/files/usr/include/c++/v1/__numeric/accumulate.h \

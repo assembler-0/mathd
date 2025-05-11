@@ -79,7 +79,7 @@ CMAKE_EXPORT_COMPILE_COMMANDS:BOOL=
 CMAKE_FIND_PACKAGE_REDIRECTS_DIR:STATIC=/data/data/com.termux/files/home/smctl/build/CMakeFiles/pkgRedirects
 
 //Install path prefix, prepended onto install directories.
-CMAKE_INSTALL_PREFIX:PATH=/usr/local
+CMAKE_INSTALL_PREFIX:PATH=/data/data/com.termux/files/usr
 
 //Path to a program.
 CMAKE_LINKER:FILEPATH=/data/data/com.termux/files/usr/bin/ld.lld
