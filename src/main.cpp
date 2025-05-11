@@ -72,12 +72,12 @@ int main(int argc, char **argv) {
   autoupdate_subcommand->callback([argc, argv]() {
       init_auto_update(argc, argv);
   });
-  CLI::App* autotune_subcommand = smctl.add_subcommand("autotune,at", "Auto tune your system for better power efficientcy and performance");
+  CLI::App* autotune_subcommand = smctl.add_subcommand("autotune", "Auto tune your system for better power efficientcy and performance");
   autotune_subcommand->fallthrough();
   autotune_subcommand->callback([argc, argv]() {
       init_system_autotune(argc, argv);
   });
-  CLI::App* resmgr_subcommand = smctl.add_subcommand("resmgr,rm", "Show temps, cpu, gpu, ram usage");
+  CLI::App* resmgr_subcommand = smctl.add_subcommand("rm", "Show temps, cpu, gpu, ram usage");
   resmgr_subcommand->fallthrough();
   resmgr_subcommand->callback([argc, argv]() {
       init_system_resource_manager(argc, argv);
