@@ -1,4 +1,5 @@
 #include "../include/smctl_calculator.hpp"
+//#include "../include/smctl_cache_cleaner.hpp"
 #include "../include/CLI11.hpp"
 void init_calculator(int argc, char** argv){
   (void)argc;

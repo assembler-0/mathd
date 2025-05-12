@@ -28,7 +28,12 @@ set_target_properties(${PROJECT_NAME} PROPERTIES
 # install(TARGAETS clicalc RUNTIME DESTINATION bin)
 # Optionally, add compile options (uncomment if needed)
 target_compile_options(${PROJECT_NAME} PRIVATE -Wall -Wextra -pedantic)
-
+add_custom_target(run
+    COMMAND ${PROJECT_NAME}
+    DEPENDS ${PROJECT_NAME}
+    WORKING_DIRECTORY ${CMAKE_PROJECT_DIR}
+    COMMENT "Running smctl"
+)
 # Optionally, add link libraries (uncomment and modify if needed)
 # target_link_libraries(${PROJECT_NAME} PRIVATE some_library)
 #find_package(fmt REQUIRED)

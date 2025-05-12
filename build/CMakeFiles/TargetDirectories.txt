@@ -1,4 +1,5 @@
 /data/data/com.termux/files/home/smctl/build/CMakeFiles/smctl.dir
+/data/data/com.termux/files/home/smctl/build/CMakeFiles/run.dir
 /data/data/com.termux/files/home/smctl/build/CMakeFiles/edit_cache.dir
 /data/data/com.termux/files/home/smctl/build/CMakeFiles/rebuild_cache.dir
 /data/data/com.termux/files/home/smctl/build/CMakeFiles/list_install_components.dir
