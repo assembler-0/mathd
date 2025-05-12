@@ -1,0 +1,1 @@
+/data/data/com.termux/files/usr/bin/c++ -O2 -g -DNDEBUG -Xlinker --dependency-file=CMakeFiles/smctl.dir/link.d CMakeFiles/smctl.dir/src/main.cpp.o -o bin/smctl
