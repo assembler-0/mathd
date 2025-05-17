@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/assembler/workspace/smctl/build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

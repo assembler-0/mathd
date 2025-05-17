@@ -2,7 +2,6 @@
 
 #include "exprtk.hpp"
 #include "termcolor.hpp" // For colored output
-#include "fmt/core.h"
 #include <iostream>
 #include <vector>
 #include <string>

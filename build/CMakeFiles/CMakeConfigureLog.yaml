@@ -4,20 +4,20 @@ events:
   -
     kind: "message-v1"
     backtrace:
-      - "/data/data/com.termux/files/usr/share/cmake-3.31/Modules/CMakeDetermineSystem.cmake:205 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineSystem.cmake:205 (message)"
       - "CMakeLists.txt:4 (project)"
     message: |
-      The system is: Android - 29 - aarch64
+      The system is: Linux - 6.14.6-arch1-1 - x86_64
   -
     kind: "message-v1"
     backtrace:
-      - "/data/data/com.termux/files/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
-      - "/data/data/com.termux/files/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
-      - "/data/data/com.termux/files/usr/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
       - "CMakeLists.txt:4 (project)"
     message: |
       Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
-      Compiler: /data/data/com.termux/files/usr/bin/c++ 
+      Compiler: /usr/bin/clang++ 
       Build flags: 
       Id flags:  
       
@@ -28,21 +28,21 @@ events:
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
       
       The CXX compiler identification is Clang, found in:
-        /data/data/com.termux/files/home/smctl/build/CMakeFiles/3.31.6/CompilerIdCXX/a.out
+        /home/assembler/workspace/smctl/build/CMakeFiles/4.0.2-dirty/CompilerIdCXX/a.out
       
   -
     kind: "try_compile-v1"
     backtrace:
-      - "/data/data/com.termux/files/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
-      - "/data/data/com.termux/files/usr/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
+      - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:4 (project)"
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "/data/data/com.termux/files/home/smctl/build/CMakeFiles/CMakeScratch/TryCompile-4mVdA4"
-      binary: "/data/data/com.termux/files/home/smctl/build/CMakeFiles/CMakeScratch/TryCompile-4mVdA4"
+      source: "/home/assembler/workspace/smctl/build/CMakeFiles/CMakeScratch/TryCompile-pgYoLN"
+      binary: "/home/assembler/workspace/smctl/build/CMakeFiles/CMakeScratch/TryCompile-pgYoLN"
     cmakeVariables:
-      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/data/data/com.termux/files/usr/bin/clang-scan-deps"
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps"
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
       CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
@@ -51,154 +51,198 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/data/data/com.termux/files/home/smctl/build/CMakeFiles/CMakeScratch/TryCompile-4mVdA4'
+        Change Dir: '/home/assembler/workspace/smctl/build/CMakeFiles/CMakeScratch/TryCompile-pgYoLN'
         
-        Run Build Command(s): /data/data/com.termux/files/usr/bin/cmake -E env VERBOSE=1 /data/data/com.termux/files/usr/bin/make -f Makefile cmTC_15e29/fast
-        /data/data/com.termux/files/usr/bin/make  -f CMakeFiles/cmTC_15e29.dir/build.make CMakeFiles/cmTC_15e29.dir/build
-        make[1]: Entering directory '/data/data/com.termux/files/home/smctl/build/CMakeFiles/CMakeScratch/TryCompile-4mVdA4'
-        Building CXX object CMakeFiles/cmTC_15e29.dir/CMakeCXXCompilerABI.cpp.o
-        /data/data/com.termux/files/usr/bin/c++   -O2 -g -DNDEBUG   -v -MD -MT CMakeFiles/cmTC_15e29.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_15e29.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_15e29.dir/CMakeCXXCompilerABI.cpp.o -c /data/data/com.termux/files/usr/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp
-        clang version 20.1.3
-        Target: aarch64-unknown-linux-android29
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_32f93/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_32f93.dir/build.make CMakeFiles/cmTC_32f93.dir/build
+        make[1]: Entering directory '/home/assembler/workspace/smctl/build/CMakeFiles/CMakeScratch/TryCompile-pgYoLN'
+        Building CXX object CMakeFiles/cmTC_32f93.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/bin/clang++   -v -MD -MT CMakeFiles/cmTC_32f93.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_32f93.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_32f93.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        clang version 19.1.7
+        Target: x86_64-pc-linux-gnu
         Thread model: posix
-        InstalledDir: /data/data/com.termux/files/usr/bin
+        InstalledDir: /usr/bin
+        Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-pc-linux-gnu/15.1.1
+        Found candidate GCC installation: /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.1.1
+        Selected GCC installation: /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.1.1
+        Candidate multilib: .;@m64
+        Candidate multilib: 32;@m32
+        Selected multilib: .;@m64
          (in-process)
-         "/data/data/com.termux/files/usr/bin/clang-20" -cc1 -triple aarch64-unknown-linux-android29 -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=non-leaf -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu generic -target-feature +v8a -target-feature +fp-armv8 -target-feature +neon -target-feature +fix-cortex-a53-835769 -target-abi aapcs -debug-info-kind=constructor -dwarf-version=4 -debugger-tuning=gdb -fdebug-compilation-dir=/data/data/com.termux/files/home/smctl/build/CMakeFiles/CMakeScratch/TryCompile-4mVdA4 -v -fcoverage-compilation-dir=/data/data/com.termux/files/home/smctl/build/CMakeFiles/CMakeScratch/TryCompile-4mVdA4 -resource-dir /data/data/com.termux/files/usr/lib/clang/20 -dependency-file CMakeFiles/cmTC_15e29.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_15e29.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -D NDEBUG -isysroot /data/data/com.termux/files -internal-isystem /data/data/com.termux/files/usr/include/c++/v1 -internal-isystem /data/data/com.termux/files/usr/lib/clang/20/include -internal-isystem /data/data/com.termux/files/usr/local/include -internal-externc-isystem /data/data/com.termux/files/usr/include/aarch64-linux-android -internal-externc-isystem /data/data/com.termux/files/include -internal-externc-isystem /data/data/com.termux/files/usr/include -O2 -fdeprecated-macro -ferror-limit 19 -fno-signed-char -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -vectorize-loops -vectorize-slp -target-feature +outline-atomics -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_15e29.dir/CMakeCXXCompilerABI.cpp.o -x c++ /data/data/com.termux/files/usr/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp
-        clang -cc1 version 20.1.3 based upon LLVM 20.1.3 default target aarch64-unknown-linux-android29
-        ignoring nonexistent directory "/data/data/com.termux/files/usr/local/include"
-        ignoring nonexistent directory "/data/data/com.termux/files/include"
+         "/usr/bin/clang++" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=/home/assembler/workspace/smctl/build/CMakeFiles/CMakeScratch/TryCompile-pgYoLN -v -fcoverage-compilation-dir=/home/assembler/workspace/smctl/build/CMakeFiles/CMakeScratch/TryCompile-pgYoLN -resource-dir /usr/lib/clang/19 -dependency-file CMakeFiles/cmTC_32f93.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_32f93.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -internal-isystem /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../include/c++/15.1.1 -internal-isystem /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../include/c++/15.1.1/x86_64-pc-linux-gnu -internal-isystem /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../include/c++/15.1.1/backward -internal-isystem /usr/lib/clang/19/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../x86_64-pc-linux-gnu/include -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -ferror-limit 19 -stack-protector 2 -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_32f93.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        clang -cc1 version 19.1.7 based upon LLVM 19.1.7 default target x86_64-pc-linux-gnu
+        ignoring nonexistent directory "/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../x86_64-pc-linux-gnu/include"
+        ignoring nonexistent directory "/include"
         #include "..." search starts here:
         #include <...> search starts here:
-         /data/data/com.termux/files/usr/include/c++/v1
-         /data/data/com.termux/files/usr/lib/clang/20/include
-         /data/data/com.termux/files/usr/include/aarch64-linux-android
-         /data/data/com.termux/files/usr/include
+         /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../include/c++/15.1.1
+         /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../include/c++/15.1.1/x86_64-pc-linux-gnu
+         /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../include/c++/15.1.1/backward
+         /usr/lib/clang/19/include
+         /usr/local/include
+         /usr/include
         End of search list.
-        Linking CXX executable cmTC_15e29
-        /data/data/com.termux/files/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_15e29.dir/link.txt --verbose=1
-        clang version 20.1.3
-        Target: aarch64-unknown-linux-android29
+        Linking CXX executable cmTC_32f93
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_32f93.dir/link.txt --verbose=1
+        clang version 19.1.7
+        Target: x86_64-pc-linux-gnu
         Thread model: posix
-        InstalledDir: /data/data/com.termux/files/usr/bin
-         "/data/data/com.termux/files/usr/bin/ld.lld" --sysroot=/data/data/com.termux/files -EL --fix-cortex-a53-843419 -z now -z relro -z max-page-size=16384 --use-android-relr-tags --pack-dyn-relocs=relr --hash-style=gnu -rpath=/data/data/com.termux/files/usr/lib --eh-frame-hdr -m aarch64linux -pie -dynamic-linker /system/bin/linker64 -o cmTC_15e29 /data/data/com.termux/files/usr/lib/crtbegin_dynamic.o -L/data/data/com.termux/files/usr/lib -L/system/lib64 CMakeFiles/cmTC_15e29.dir/CMakeCXXCompilerABI.cpp.o -lc++_shared /data/data/com.termux/files/usr/lib/clang/20/lib/linux/libclang_rt.builtins-aarch64-android.a -l:libunwind.a -ldl -lm -lc /data/data/com.termux/files/usr/lib/clang/20/lib/linux/libclang_rt.builtins-aarch64-android.a -l:libunwind.a -ldl /data/data/com.termux/files/usr/lib/crtend_android.o
-        /data/data/com.termux/files/usr/bin/c++ -O2 -g -DNDEBUG  -v CMakeFiles/cmTC_15e29.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_15e29
-        make[1]: Leaving directory '/data/data/com.termux/files/home/smctl/build/CMakeFiles/CMakeScratch/TryCompile-4mVdA4'
+        InstalledDir: /usr/bin
+        Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-pc-linux-gnu/15.1.1
+        Found candidate GCC installation: /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.1.1
+        Selected GCC installation: /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.1.1
+        Candidate multilib: .;@m64
+        Candidate multilib: 32;@m32
+        Selected multilib: .;@m64
+         "/usr/bin/ld" --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -pie -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_32f93 /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib64/Scrt1.o /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib64/crti.o /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.1.1/crtbeginS.o -L/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.1.1 -L/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/lib -L/usr/lib -v CMakeFiles/cmTC_32f93.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.1.1/crtendS.o /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib64/crtn.o
+        GNU ld (GNU Binutils) 2.44.0
+        /usr/bin/clang++  -v -Wl,-v CMakeFiles/cmTC_32f93.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_32f93
+        make[1]: Leaving directory '/home/assembler/workspace/smctl/build/CMakeFiles/CMakeScratch/TryCompile-pgYoLN'
         
       exitCode: 0
   -
     kind: "message-v1"
     backtrace:
-      - "/data/data/com.termux/files/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
-      - "/data/data/com.termux/files/usr/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:191 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:4 (project)"
     message: |
       Parsed CXX implicit include dir info: rv=done
         found start of include info
         found start of implicit include info
-          add: [/data/data/com.termux/files/usr/include/c++/v1]
-          add: [/data/data/com.termux/files/usr/lib/clang/20/include]
-          add: [/data/data/com.termux/files/usr/include/aarch64-linux-android]
-          add: [/data/data/com.termux/files/usr/include]
+          add: [/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../include/c++/15.1.1]
+          add: [/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../include/c++/15.1.1/x86_64-pc-linux-gnu]
+          add: [/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../include/c++/15.1.1/backward]
+          add: [/usr/lib/clang/19/include]
+          add: [/usr/local/include]
+          add: [/usr/include]
         end of search list found
-        collapse include dir [/data/data/com.termux/files/usr/include/c++/v1] ==> [/data/data/com.termux/files/usr/include/c++/v1]
-        collapse include dir [/data/data/com.termux/files/usr/lib/clang/20/include] ==> [/data/data/com.termux/files/usr/lib/clang/20/include]
-        collapse include dir [/data/data/com.termux/files/usr/include/aarch64-linux-android] ==> [/data/data/com.termux/files/usr/include/aarch64-linux-android]
-        collapse include dir [/data/data/com.termux/files/usr/include] ==> [/data/data/com.termux/files/usr/include]
-        implicit include dirs: [/data/data/com.termux/files/usr/include/c++/v1;/data/data/com.termux/files/usr/lib/clang/20/include;/data/data/com.termux/files/usr/include/aarch64-linux-android;/data/data/com.termux/files/usr/include]
+        collapse include dir [/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../include/c++/15.1.1] ==> [/usr/include/c++/15.1.1]
+        collapse include dir [/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../include/c++/15.1.1/x86_64-pc-linux-gnu] ==> [/usr/include/c++/15.1.1/x86_64-pc-linux-gnu]
+        collapse include dir [/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../include/c++/15.1.1/backward] ==> [/usr/include/c++/15.1.1/backward]
+        collapse include dir [/usr/lib/clang/19/include] ==> [/usr/lib/clang/19/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/include/c++/15.1.1;/usr/include/c++/15.1.1/x86_64-pc-linux-gnu;/usr/include/c++/15.1.1/backward;/usr/lib/clang/19/include;/usr/local/include;/usr/include]
       
       
   -
     kind: "message-v1"
     backtrace:
-      - "/data/data/com.termux/files/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
-      - "/data/data/com.termux/files/usr/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:227 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:4 (project)"
     message: |
       Parsed CXX implicit link information:
-        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
-        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
-        ignore line: [Change Dir: '/data/data/com.termux/files/home/smctl/build/CMakeFiles/CMakeScratch/TryCompile-4mVdA4']
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
+        ignore line: [Change Dir: '/home/assembler/workspace/smctl/build/CMakeFiles/CMakeScratch/TryCompile-pgYoLN']
         ignore line: []
-        ignore line: [Run Build Command(s): /data/data/com.termux/files/usr/bin/cmake -E env VERBOSE=1 /data/data/com.termux/files/usr/bin/make -f Makefile cmTC_15e29/fast]
-        ignore line: [/data/data/com.termux/files/usr/bin/make  -f CMakeFiles/cmTC_15e29.dir/build.make CMakeFiles/cmTC_15e29.dir/build]
-        ignore line: [make[1]: Entering directory '/data/data/com.termux/files/home/smctl/build/CMakeFiles/CMakeScratch/TryCompile-4mVdA4']
-        ignore line: [Building CXX object CMakeFiles/cmTC_15e29.dir/CMakeCXXCompilerABI.cpp.o]
-        ignore line: [/data/data/com.termux/files/usr/bin/c++   -O2 -g -DNDEBUG   -v -MD -MT CMakeFiles/cmTC_15e29.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_15e29.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_15e29.dir/CMakeCXXCompilerABI.cpp.o -c /data/data/com.termux/files/usr/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp]
-        ignore line: [clang version 20.1.3]
-        ignore line: [Target: aarch64-unknown-linux-android29]
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_32f93/fast]
+        ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_32f93.dir/build.make CMakeFiles/cmTC_32f93.dir/build]
+        ignore line: [make[1]: Entering directory '/home/assembler/workspace/smctl/build/CMakeFiles/CMakeScratch/TryCompile-pgYoLN']
+        ignore line: [Building CXX object CMakeFiles/cmTC_32f93.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/bin/clang++   -v -MD -MT CMakeFiles/cmTC_32f93.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_32f93.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_32f93.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [clang version 19.1.7]
+        ignore line: [Target: x86_64-pc-linux-gnu]
         ignore line: [Thread model: posix]
-        ignore line: [InstalledDir: /data/data/com.termux/files/usr/bin]
+        ignore line: [InstalledDir: /usr/bin]
+        ignore line: [Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-pc-linux-gnu/15.1.1]
+        ignore line: [Found candidate GCC installation: /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.1.1]
+        ignore line: [Selected GCC installation: /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.1.1]
+        ignore line: [Candidate multilib: .]
+        ignore line: [@m64]
+        ignore line: [Candidate multilib: 32]
+        ignore line: [@m32]
+        ignore line: [Selected multilib: .]
+        ignore line: [@m64]
         ignore line: [ (in-process)]
-        ignore line: [ "/data/data/com.termux/files/usr/bin/clang-20" -cc1 -triple aarch64-unknown-linux-android29 -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=non-leaf -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu generic -target-feature +v8a -target-feature +fp-armv8 -target-feature +neon -target-feature +fix-cortex-a53-835769 -target-abi aapcs -debug-info-kind=constructor -dwarf-version=4 -debugger-tuning=gdb -fdebug-compilation-dir=/data/data/com.termux/files/home/smctl/build/CMakeFiles/CMakeScratch/TryCompile-4mVdA4 -v -fcoverage-compilation-dir=/data/data/com.termux/files/home/smctl/build/CMakeFiles/CMakeScratch/TryCompile-4mVdA4 -resource-dir /data/data/com.termux/files/usr/lib/clang/20 -dependency-file CMakeFiles/cmTC_15e29.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_15e29.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -D NDEBUG -isysroot /data/data/com.termux/files -internal-isystem /data/data/com.termux/files/usr/include/c++/v1 -internal-isystem /data/data/com.termux/files/usr/lib/clang/20/include -internal-isystem /data/data/com.termux/files/usr/local/include -internal-externc-isystem /data/data/com.termux/files/usr/include/aarch64-linux-android -internal-externc-isystem /data/data/com.termux/files/include -internal-externc-isystem /data/data/com.termux/files/usr/include -O2 -fdeprecated-macro -ferror-limit 19 -fno-signed-char -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -vectorize-loops -vectorize-slp -target-feature +outline-atomics -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_15e29.dir/CMakeCXXCompilerABI.cpp.o -x c++ /data/data/com.termux/files/usr/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp]
-        ignore line: [clang -cc1 version 20.1.3 based upon LLVM 20.1.3 default target aarch64-unknown-linux-android29]
-        ignore line: [ignoring nonexistent directory "/data/data/com.termux/files/usr/local/include"]
-        ignore line: [ignoring nonexistent directory "/data/data/com.termux/files/include"]
+        ignore line: [ "/usr/bin/clang++" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=/home/assembler/workspace/smctl/build/CMakeFiles/CMakeScratch/TryCompile-pgYoLN -v -fcoverage-compilation-dir=/home/assembler/workspace/smctl/build/CMakeFiles/CMakeScratch/TryCompile-pgYoLN -resource-dir /usr/lib/clang/19 -dependency-file CMakeFiles/cmTC_32f93.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_32f93.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -internal-isystem /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../include/c++/15.1.1 -internal-isystem /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../include/c++/15.1.1/x86_64-pc-linux-gnu -internal-isystem /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../include/c++/15.1.1/backward -internal-isystem /usr/lib/clang/19/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../x86_64-pc-linux-gnu/include -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -ferror-limit 19 -stack-protector 2 -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_32f93.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [clang -cc1 version 19.1.7 based upon LLVM 19.1.7 default target x86_64-pc-linux-gnu]
+        ignore line: [ignoring nonexistent directory "/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../x86_64-pc-linux-gnu/include"]
+        ignore line: [ignoring nonexistent directory "/include"]
         ignore line: [#include "..." search starts here:]
         ignore line: [#include <...> search starts here:]
-        ignore line: [ /data/data/com.termux/files/usr/include/c++/v1]
-        ignore line: [ /data/data/com.termux/files/usr/lib/clang/20/include]
-        ignore line: [ /data/data/com.termux/files/usr/include/aarch64-linux-android]
-        ignore line: [ /data/data/com.termux/files/usr/include]
+        ignore line: [ /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../include/c++/15.1.1]
+        ignore line: [ /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../include/c++/15.1.1/x86_64-pc-linux-gnu]
+        ignore line: [ /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../include/c++/15.1.1/backward]
+        ignore line: [ /usr/lib/clang/19/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include]
         ignore line: [End of search list.]
-        ignore line: [Linking CXX executable cmTC_15e29]
-        ignore line: [/data/data/com.termux/files/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_15e29.dir/link.txt --verbose=1]
-        ignore line: [clang version 20.1.3]
-        ignore line: [Target: aarch64-unknown-linux-android29]
+        ignore line: [Linking CXX executable cmTC_32f93]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_32f93.dir/link.txt --verbose=1]
+        ignore line: [clang version 19.1.7]
+        ignore line: [Target: x86_64-pc-linux-gnu]
         ignore line: [Thread model: posix]
-        ignore line: [InstalledDir: /data/data/com.termux/files/usr/bin]
-        link line: [ "/data/data/com.termux/files/usr/bin/ld.lld" --sysroot=/data/data/com.termux/files -EL --fix-cortex-a53-843419 -z now -z relro -z max-page-size=16384 --use-android-relr-tags --pack-dyn-relocs=relr --hash-style=gnu -rpath=/data/data/com.termux/files/usr/lib --eh-frame-hdr -m aarch64linux -pie -dynamic-linker /system/bin/linker64 -o cmTC_15e29 /data/data/com.termux/files/usr/lib/crtbegin_dynamic.o -L/data/data/com.termux/files/usr/lib -L/system/lib64 CMakeFiles/cmTC_15e29.dir/CMakeCXXCompilerABI.cpp.o -lc++_shared /data/data/com.termux/files/usr/lib/clang/20/lib/linux/libclang_rt.builtins-aarch64-android.a -l:libunwind.a -ldl -lm -lc /data/data/com.termux/files/usr/lib/clang/20/lib/linux/libclang_rt.builtins-aarch64-android.a -l:libunwind.a -ldl /data/data/com.termux/files/usr/lib/crtend_android.o]
-          arg [/data/data/com.termux/files/usr/bin/ld.lld] ==> ignore
-          arg [--sysroot=/data/data/com.termux/files] ==> ignore
-          arg [-EL] ==> ignore
-          arg [--fix-cortex-a53-843419] ==> ignore
-          arg [-znow] ==> ignore
-          arg [-zrelro] ==> ignore
-          arg [-zmax-page-size=16384] ==> ignore
-          arg [--use-android-relr-tags] ==> ignore
-          arg [--pack-dyn-relocs=relr] ==> ignore
+        ignore line: [InstalledDir: /usr/bin]
+        ignore line: [Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-pc-linux-gnu/15.1.1]
+        ignore line: [Found candidate GCC installation: /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.1.1]
+        ignore line: [Selected GCC installation: /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.1.1]
+        ignore line: [Candidate multilib: .]
+        ignore line: [@m64]
+        ignore line: [Candidate multilib: 32]
+        ignore line: [@m32]
+        ignore line: [Selected multilib: .]
+        ignore line: [@m64]
+        link line: [ "/usr/bin/ld" --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -pie -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_32f93 /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib64/Scrt1.o /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib64/crti.o /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.1.1/crtbeginS.o -L/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.1.1 -L/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/lib -L/usr/lib -v CMakeFiles/cmTC_32f93.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.1.1/crtendS.o /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib64/crtn.o]
+          arg [/usr/bin/ld] ==> ignore
           arg [--hash-style=gnu] ==> ignore
-          arg [-rpath=/data/data/com.termux/files/usr/lib] ==> ignore
+          arg [--build-id] ==> ignore
           arg [--eh-frame-hdr] ==> ignore
           arg [-m] ==> ignore
-          arg [aarch64linux] ==> ignore
+          arg [elf_x86_64] ==> ignore
           arg [-pie] ==> ignore
           arg [-dynamic-linker] ==> ignore
-          arg [/system/bin/linker64] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_15e29] ==> ignore
-          arg [/data/data/com.termux/files/usr/lib/crtbegin_dynamic.o] ==> obj [/data/data/com.termux/files/usr/lib/crtbegin_dynamic.o]
-          arg [-L/data/data/com.termux/files/usr/lib] ==> dir [/data/data/com.termux/files/usr/lib]
-          arg [-L/system/lib64] ==> dir [/system/lib64]
-          arg [CMakeFiles/cmTC_15e29.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
-          arg [-lc++_shared] ==> lib [c++_shared]
-          arg [/data/data/com.termux/files/usr/lib/clang/20/lib/linux/libclang_rt.builtins-aarch64-android.a] ==> lib [/data/data/com.termux/files/usr/lib/clang/20/lib/linux/libclang_rt.builtins-aarch64-android.a]
-          arg [-l:libunwind.a] ==> lib [-l:libunwind.a]
-          arg [-ldl] ==> lib [dl]
+          arg [cmTC_32f93] ==> ignore
+          arg [/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib64/Scrt1.o] ==> obj [/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib64/Scrt1.o]
+          arg [/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib64/crti.o] ==> obj [/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib64/crti.o]
+          arg [/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.1.1/crtbeginS.o] ==> obj [/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.1.1/crtbeginS.o]
+          arg [-L/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.1.1] ==> dir [/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.1.1]
+          arg [-L/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib64] ==> dir [/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib64]
+          arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+          arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+          arg [-L/lib] ==> dir [/lib]
+          arg [-L/usr/lib] ==> dir [/usr/lib]
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_32f93.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
           arg [-lm] ==> lib [m]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
           arg [-lc] ==> lib [c]
-          arg [/data/data/com.termux/files/usr/lib/clang/20/lib/linux/libclang_rt.builtins-aarch64-android.a] ==> lib [/data/data/com.termux/files/usr/lib/clang/20/lib/linux/libclang_rt.builtins-aarch64-android.a]
-          arg [-l:libunwind.a] ==> lib [-l:libunwind.a]
-          arg [-ldl] ==> lib [dl]
-          arg [/data/data/com.termux/files/usr/lib/crtend_android.o] ==> obj [/data/data/com.termux/files/usr/lib/crtend_android.o]
-        linker tool for 'CXX': /data/data/com.termux/files/usr/bin/ld.lld
-        remove lib [/data/data/com.termux/files/usr/lib/clang/20/lib/linux/libclang_rt.builtins-aarch64-android.a]
-        remove lib [/data/data/com.termux/files/usr/lib/clang/20/lib/linux/libclang_rt.builtins-aarch64-android.a]
-        collapse library dir [/data/data/com.termux/files/usr/lib] ==> [/data/data/com.termux/files/usr/lib]
-        collapse library dir [/system/lib64] ==> [/system/lib64]
-        implicit libs: [c++_shared;-l:libunwind.a;dl;m;c;-l:libunwind.a;dl]
-        implicit objs: [/data/data/com.termux/files/usr/lib/crtbegin_dynamic.o;/data/data/com.termux/files/usr/lib/crtend_android.o]
-        implicit dirs: [/data/data/com.termux/files/usr/lib;/system/lib64]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.1.1/crtendS.o] ==> obj [/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.1.1/crtendS.o]
+          arg [/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib64/crtn.o] ==> obj [/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib64/crtn.o]
+        linker tool for 'CXX': /usr/bin/ld
+        collapse obj [/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib64/Scrt1.o] ==> [/usr/lib64/Scrt1.o]
+        collapse obj [/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib64/crti.o] ==> [/usr/lib64/crti.o]
+        collapse obj [/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.1.1/crtbeginS.o] ==> [/usr/lib64/gcc/x86_64-pc-linux-gnu/15.1.1/crtbeginS.o]
+        collapse obj [/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.1.1/crtendS.o] ==> [/usr/lib64/gcc/x86_64-pc-linux-gnu/15.1.1/crtendS.o]
+        collapse obj [/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib64/crtn.o] ==> [/usr/lib64/crtn.o]
+        collapse library dir [/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.1.1] ==> [/usr/lib64/gcc/x86_64-pc-linux-gnu/15.1.1]
+        collapse library dir [/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib64] ==> [/usr/lib64]
+        collapse library dir [/lib/../lib64] ==> [/lib64]
+        collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+        collapse library dir [/lib] ==> [/lib]
+        collapse library dir [/usr/lib] ==> [/usr/lib]
+        implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+        implicit objs: [/usr/lib64/Scrt1.o;/usr/lib64/crti.o;/usr/lib64/gcc/x86_64-pc-linux-gnu/15.1.1/crtbeginS.o;/usr/lib64/gcc/x86_64-pc-linux-gnu/15.1.1/crtendS.o;/usr/lib64/crtn.o]
+        implicit dirs: [/usr/lib64/gcc/x86_64-pc-linux-gnu/15.1.1;/usr/lib64;/lib64;/lib;/usr/lib]
         implicit fwks: []
       
       
   -
     kind: "message-v1"
     backtrace:
-      - "/data/data/com.termux/files/usr/share/cmake-3.31/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
-      - "/data/data/com.termux/files/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
-      - "/data/data/com.termux/files/usr/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "/usr/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake:36 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:270 (cmake_determine_linker_id)"
+      - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:4 (project)"
     message: |
-      Running the CXX compiler's linker: "/data/data/com.termux/files/usr/bin/ld.lld" "-v"
-      LLD 20.1.3 (compatible with GNU linkers)
+      Running the CXX compiler's linker: "/usr/bin/ld" "-v"
+      GNU ld (GNU Binutils) 2.44.0
 ...
