@@ -9,7 +9,6 @@
 #include <iomanip>    // For std::setprecision, std::fixed
 #include <limits>     // For std::numeric_limits
 #include <algorithm>  // For std::min, std::max (though direct comparison is often used)
-
 // Using namespaces within the .hpp for brevity as it's a self-contained example.
 // In larger projects, prefer 'std::' and 'termcolor::' prefixes or 'using' declarations in .cpp files / specific scopes.
 using namespace std;
