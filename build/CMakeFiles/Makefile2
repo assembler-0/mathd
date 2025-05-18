@@ -76,22 +76,24 @@ preinstall:
 
 # The main recursive "clean" target.
 clean: CMakeFiles/smctl.dir/clean
-clean: CMakeFiles/run.dir/clean
+clean: CMakeFiles/smctl_autogen_timestamp_deps.dir/clean
+clean: CMakeFiles/smctl_autogen.dir/clean
 .PHONY : clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/smctl.dir
 
 # All Build rule for target.
-CMakeFiles/smctl.dir/all:
+CMakeFiles/smctl.dir/all: CMakeFiles/smctl_autogen.dir/all
+CMakeFiles/smctl.dir/all: CMakeFiles/smctl_autogen_timestamp_deps.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/smctl.dir/build.make CMakeFiles/smctl.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/smctl.dir/build.make CMakeFiles/smctl.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/assembler/workspace/smctl/build/CMakeFiles --progress-num=2,3 "Built target smctl"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/assembler/workspace/smctl/build/CMakeFiles --progress-num=1,2,3 "Built target smctl"
 .PHONY : CMakeFiles/smctl.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/smctl.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/assembler/workspace/smctl/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/assembler/workspace/smctl/build/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/smctl.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/assembler/workspace/smctl/build/CMakeFiles 0
 .PHONY : CMakeFiles/smctl.dir/rule
@@ -101,9 +103,9 @@ smctl: CMakeFiles/smctl.dir/rule
 .PHONY : smctl
 
 # codegen rule for target.
-CMakeFiles/smctl.dir/codegen:
+CMakeFiles/smctl.dir/codegen: CMakeFiles/smctl_autogen_timestamp_deps.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/smctl.dir/build.make CMakeFiles/smctl.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/assembler/workspace/smctl/build/CMakeFiles --progress-num=2,3 "Finished codegen for target smctl"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/assembler/workspace/smctl/build/CMakeFiles --progress-num=1,2,3 "Finished codegen for target smctl"
 .PHONY : CMakeFiles/smctl.dir/codegen
 
 # clean rule for target.
@@ -112,36 +114,68 @@ CMakeFiles/smctl.dir/clean:
 .PHONY : CMakeFiles/smctl.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/run.dir
+# Target rules for target CMakeFiles/smctl_autogen_timestamp_deps.dir
 
 # All Build rule for target.
-CMakeFiles/run.dir/all: CMakeFiles/smctl.dir/all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/assembler/workspace/smctl/build/CMakeFiles --progress-num=1 "Built target run"
-.PHONY : CMakeFiles/run.dir/all
+CMakeFiles/smctl_autogen_timestamp_deps.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/smctl_autogen_timestamp_deps.dir/build.make CMakeFiles/smctl_autogen_timestamp_deps.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/smctl_autogen_timestamp_deps.dir/build.make CMakeFiles/smctl_autogen_timestamp_deps.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/assembler/workspace/smctl/build/CMakeFiles --progress-num= "Built target smctl_autogen_timestamp_deps"
+.PHONY : CMakeFiles/smctl_autogen_timestamp_deps.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/run.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/assembler/workspace/smctl/build/CMakeFiles 3
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/run.dir/all
+CMakeFiles/smctl_autogen_timestamp_deps.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/assembler/workspace/smctl/build/CMakeFiles 0
-.PHONY : CMakeFiles/run.dir/rule
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/smctl_autogen_timestamp_deps.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/assembler/workspace/smctl/build/CMakeFiles 0
+.PHONY : CMakeFiles/smctl_autogen_timestamp_deps.dir/rule
 
 # Convenience name for target.
-run: CMakeFiles/run.dir/rule
-.PHONY : run
+smctl_autogen_timestamp_deps: CMakeFiles/smctl_autogen_timestamp_deps.dir/rule
+.PHONY : smctl_autogen_timestamp_deps
 
 # codegen rule for target.
-CMakeFiles/run.dir/codegen: CMakeFiles/smctl.dir/all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/assembler/workspace/smctl/build/CMakeFiles --progress-num=1 "Finished codegen for target run"
-.PHONY : CMakeFiles/run.dir/codegen
+CMakeFiles/smctl_autogen_timestamp_deps.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/smctl_autogen_timestamp_deps.dir/build.make CMakeFiles/smctl_autogen_timestamp_deps.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/assembler/workspace/smctl/build/CMakeFiles --progress-num= "Finished codegen for target smctl_autogen_timestamp_deps"
+.PHONY : CMakeFiles/smctl_autogen_timestamp_deps.dir/codegen
 
 # clean rule for target.
-CMakeFiles/run.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/clean
-.PHONY : CMakeFiles/run.dir/clean
+CMakeFiles/smctl_autogen_timestamp_deps.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/smctl_autogen_timestamp_deps.dir/build.make CMakeFiles/smctl_autogen_timestamp_deps.dir/clean
+.PHONY : CMakeFiles/smctl_autogen_timestamp_deps.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/smctl_autogen.dir
+
+# All Build rule for target.
+CMakeFiles/smctl_autogen.dir/all: CMakeFiles/smctl_autogen_timestamp_deps.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/smctl_autogen.dir/build.make CMakeFiles/smctl_autogen.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/smctl_autogen.dir/build.make CMakeFiles/smctl_autogen.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/assembler/workspace/smctl/build/CMakeFiles --progress-num=4 "Built target smctl_autogen"
+.PHONY : CMakeFiles/smctl_autogen.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/smctl_autogen.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/assembler/workspace/smctl/build/CMakeFiles 1
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/smctl_autogen.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/assembler/workspace/smctl/build/CMakeFiles 0
+.PHONY : CMakeFiles/smctl_autogen.dir/rule
+
+# Convenience name for target.
+smctl_autogen: CMakeFiles/smctl_autogen.dir/rule
+.PHONY : smctl_autogen
+
+# codegen rule for target.
+CMakeFiles/smctl_autogen.dir/codegen: CMakeFiles/smctl_autogen_timestamp_deps.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/smctl_autogen.dir/build.make CMakeFiles/smctl_autogen.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/assembler/workspace/smctl/build/CMakeFiles --progress-num=4 "Finished codegen for target smctl_autogen"
+.PHONY : CMakeFiles/smctl_autogen.dir/codegen
+
+# clean rule for target.
+CMakeFiles/smctl_autogen.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/smctl_autogen.dir/build.make CMakeFiles/smctl_autogen.dir/clean
+.PHONY : CMakeFiles/smctl_autogen.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

@@ -85,57 +85,19 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 .PHONY : rebuild_cache/fast
 
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
-
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
-.PHONY : list_install_components/fast
-
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install
-
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install/fast
-
-# Special rule for the target install/local
-install/local: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
-	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local
-
-# Special rule for the target install/local
-install/local/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
-	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local/fast
-
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
-
-# Special rule for the target install/strip
-install/strip/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip/fast
-
 # The main all target
 all: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/assembler/workspace/smctl/build/CMakeFiles /home/assembler/workspace/smctl/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/assembler/workspace/smctl/build/CMakeFiles 0
 .PHONY : all
+
+# The main codegen target
+codegen: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/assembler/workspace/smctl/build/CMakeFiles /home/assembler/workspace/smctl/build//CMakeFiles/progress.marks
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 codegen
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/assembler/workspace/smctl/build/CMakeFiles 0
+.PHONY : codegen
 
 # The main clean target
 clean:
@@ -175,17 +137,54 @@ smctl/fast:
 .PHONY : smctl/fast
 
 #=============================================================================
-# Target rules for targets named run
+# Target rules for targets named smctl_autogen_timestamp_deps
 
 # Build rule for target.
-run: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 run
-.PHONY : run
+smctl_autogen_timestamp_deps: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 smctl_autogen_timestamp_deps
+.PHONY : smctl_autogen_timestamp_deps
 
 # fast build rule for target.
-run/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/build
-.PHONY : run/fast
+smctl_autogen_timestamp_deps/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/smctl_autogen_timestamp_deps.dir/build.make CMakeFiles/smctl_autogen_timestamp_deps.dir/build
+.PHONY : smctl_autogen_timestamp_deps/fast
+
+#=============================================================================
+# Target rules for targets named smctl_autogen
+
+# Build rule for target.
+smctl_autogen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 smctl_autogen
+.PHONY : smctl_autogen
+
+# fast build rule for target.
+smctl_autogen/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/smctl_autogen.dir/build.make CMakeFiles/smctl_autogen.dir/build
+.PHONY : smctl_autogen/fast
+
+smctl_autogen/mocs_compilation.o: smctl_autogen/mocs_compilation.cpp.o
+.PHONY : smctl_autogen/mocs_compilation.o
+
+# target to build an object file
+smctl_autogen/mocs_compilation.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/smctl.dir/build.make CMakeFiles/smctl.dir/smctl_autogen/mocs_compilation.cpp.o
+.PHONY : smctl_autogen/mocs_compilation.cpp.o
+
+smctl_autogen/mocs_compilation.i: smctl_autogen/mocs_compilation.cpp.i
+.PHONY : smctl_autogen/mocs_compilation.i
+
+# target to preprocess a source file
+smctl_autogen/mocs_compilation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/smctl.dir/build.make CMakeFiles/smctl.dir/smctl_autogen/mocs_compilation.cpp.i
+.PHONY : smctl_autogen/mocs_compilation.cpp.i
+
+smctl_autogen/mocs_compilation.s: smctl_autogen/mocs_compilation.cpp.s
+.PHONY : smctl_autogen/mocs_compilation.s
+
+# target to generate assembly for a file
+smctl_autogen/mocs_compilation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/smctl.dir/build.make CMakeFiles/smctl.dir/smctl_autogen/mocs_compilation.cpp.s
+.PHONY : smctl_autogen/mocs_compilation.cpp.s
 
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
@@ -217,14 +216,15 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... codegen"
 	@echo "... edit_cache"
-	@echo "... install"
-	@echo "... install/local"
-	@echo "... install/strip"
-	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... run"
+	@echo "... smctl_autogen"
+	@echo "... smctl_autogen_timestamp_deps"
 	@echo "... smctl"
+	@echo "... smctl_autogen/mocs_compilation.o"
+	@echo "... smctl_autogen/mocs_compilation.i"
+	@echo "... smctl_autogen/mocs_compilation.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

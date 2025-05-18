@@ -1,8 +1,5 @@
 /home/assembler/workspace/smctl/build/CMakeFiles/smctl.dir
-/home/assembler/workspace/smctl/build/CMakeFiles/run.dir
 /home/assembler/workspace/smctl/build/CMakeFiles/edit_cache.dir
 /home/assembler/workspace/smctl/build/CMakeFiles/rebuild_cache.dir
-/home/assembler/workspace/smctl/build/CMakeFiles/list_install_components.dir
-/home/assembler/workspace/smctl/build/CMakeFiles/install.dir
-/home/assembler/workspace/smctl/build/CMakeFiles/install/local.dir
-/home/assembler/workspace/smctl/build/CMakeFiles/install/strip.dir
+/home/assembler/workspace/smctl/build/CMakeFiles/smctl_autogen_timestamp_deps.dir
+/home/assembler/workspace/smctl/build/CMakeFiles/smctl_autogen.dir
