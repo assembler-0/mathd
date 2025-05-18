@@ -1,5 +1,5 @@
-/home/assembler/workspace/smctl/build/CMakeFiles/smctl.dir
-/home/assembler/workspace/smctl/build/CMakeFiles/edit_cache.dir
-/home/assembler/workspace/smctl/build/CMakeFiles/rebuild_cache.dir
-/home/assembler/workspace/smctl/build/CMakeFiles/smctl_autogen_timestamp_deps.dir
-/home/assembler/workspace/smctl/build/CMakeFiles/smctl_autogen.dir
+/home/assembler/workspace/mathd/build/CMakeFiles/mathd.dir
+/home/assembler/workspace/mathd/build/CMakeFiles/edit_cache.dir
+/home/assembler/workspace/mathd/build/CMakeFiles/rebuild_cache.dir
+/home/assembler/workspace/mathd/build/CMakeFiles/mathd_autogen_timestamp_deps.dir
+/home/assembler/workspace/mathd/build/CMakeFiles/mathd_autogen.dir

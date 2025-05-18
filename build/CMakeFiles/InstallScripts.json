@@ -1,7 +1,7 @@
 {
 	"InstallScripts" : 
 	[
-		"/home/assembler/workspace/smctl/build/cmake_install.cmake"
+		"/home/assembler/workspace/mathd/build/cmake_install.cmake"
 	],
 	"Parallel" : false
 }

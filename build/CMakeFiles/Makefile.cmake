@@ -7,7 +7,7 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 # The top level Makefile was generated from the following files:
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
-  "/home/assembler/workspace/smctl/CMakeLists.txt"
+  "/home/assembler/workspace/mathd/CMakeLists.txt"
   "CMakeFiles/4.0.2-dirty/CMakeCXXCompiler.cmake"
   "CMakeFiles/4.0.2-dirty/CMakeSystem.cmake"
   "/usr/lib/cmake/Qt5/Qt5Config.cmake"
@@ -158,13 +158,13 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/4.0.2-dirty/CMakeCXXCompiler.cmake"
   "CMakeFiles/4.0.2-dirty/CMakeCXXCompiler.cmake"
   "CMakeFiles/4.0.2-dirty/CMakeCXXCompiler.cmake"
-  "CMakeFiles/smctl_autogen.dir/AutogenInfo.json"
+  "CMakeFiles/mathd_autogen.dir/AutogenInfo.json"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/smctl.dir/DependInfo.cmake"
-  "CMakeFiles/smctl_autogen_timestamp_deps.dir/DependInfo.cmake"
-  "CMakeFiles/smctl_autogen.dir/DependInfo.cmake"
+  "CMakeFiles/mathd.dir/DependInfo.cmake"
+  "CMakeFiles/mathd_autogen_timestamp_deps.dir/DependInfo.cmake"
+  "CMakeFiles/mathd_autogen.dir/DependInfo.cmake"
   )

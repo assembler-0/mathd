@@ -1,3 +1,3 @@
 # Hashes of file build rules.
-9a72ee593c521a5c8a8d18ee6db26a62 CMakeFiles/smctl_autogen
-b6596ce8ed8389bbe9f686f0567fd751 smctl_autogen/timestamp
+e21c0d9bfef88591aa3db1323ddb6f7d CMakeFiles/mathd_autogen
+2520bc19e4bc9435483a7f6621975dd6 mathd_autogen/timestamp

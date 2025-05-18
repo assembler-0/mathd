@@ -1,1 +1,0 @@
-/usr/bin/clang++ -Xlinker --dependency-file=CMakeFiles/smctl.dir/link.d CMakeFiles/smctl.dir/smctl_autogen/mocs_compilation.cpp.o CMakeFiles/smctl.dir/src/main.cpp.o -o bin/smctl  /usr/lib/libQt5Widgets.so.5.15.16 /usr/lib/libQt5Gui.so.5.15.16 /usr/lib/libQt5Core.so.5.15.16

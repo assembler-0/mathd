@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/assembler/workspace/smctl
+CMAKE_SOURCE_DIR = /home/assembler/workspace/mathd
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/assembler/workspace/smctl/build
+CMAKE_BINARY_DIR = /home/assembler/workspace/mathd/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,16 +87,16 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/assembler/workspace/smctl/build/CMakeFiles /home/assembler/workspace/smctl/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/assembler/workspace/mathd/build/CMakeFiles /home/assembler/workspace/mathd/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/assembler/workspace/smctl/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/assembler/workspace/mathd/build/CMakeFiles 0
 .PHONY : all
 
 # The main codegen target
 codegen: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/assembler/workspace/smctl/build/CMakeFiles /home/assembler/workspace/smctl/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/assembler/workspace/mathd/build/CMakeFiles /home/assembler/workspace/mathd/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 codegen
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/assembler/workspace/smctl/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/assembler/workspace/mathd/build/CMakeFiles 0
 .PHONY : codegen
 
 # The main clean target
@@ -124,74 +124,74 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named smctl
+# Target rules for targets named mathd
 
 # Build rule for target.
-smctl: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 smctl
-.PHONY : smctl
+mathd: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mathd
+.PHONY : mathd
 
 # fast build rule for target.
-smctl/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/smctl.dir/build.make CMakeFiles/smctl.dir/build
-.PHONY : smctl/fast
+mathd/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mathd.dir/build.make CMakeFiles/mathd.dir/build
+.PHONY : mathd/fast
 
 #=============================================================================
-# Target rules for targets named smctl_autogen_timestamp_deps
+# Target rules for targets named mathd_autogen_timestamp_deps
 
 # Build rule for target.
-smctl_autogen_timestamp_deps: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 smctl_autogen_timestamp_deps
-.PHONY : smctl_autogen_timestamp_deps
+mathd_autogen_timestamp_deps: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mathd_autogen_timestamp_deps
+.PHONY : mathd_autogen_timestamp_deps
 
 # fast build rule for target.
-smctl_autogen_timestamp_deps/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/smctl_autogen_timestamp_deps.dir/build.make CMakeFiles/smctl_autogen_timestamp_deps.dir/build
-.PHONY : smctl_autogen_timestamp_deps/fast
+mathd_autogen_timestamp_deps/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mathd_autogen_timestamp_deps.dir/build.make CMakeFiles/mathd_autogen_timestamp_deps.dir/build
+.PHONY : mathd_autogen_timestamp_deps/fast
 
 #=============================================================================
-# Target rules for targets named smctl_autogen
+# Target rules for targets named mathd_autogen
 
 # Build rule for target.
-smctl_autogen: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 smctl_autogen
-.PHONY : smctl_autogen
+mathd_autogen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mathd_autogen
+.PHONY : mathd_autogen
 
 # fast build rule for target.
-smctl_autogen/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/smctl_autogen.dir/build.make CMakeFiles/smctl_autogen.dir/build
-.PHONY : smctl_autogen/fast
+mathd_autogen/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mathd_autogen.dir/build.make CMakeFiles/mathd_autogen.dir/build
+.PHONY : mathd_autogen/fast
 
-smctl_autogen/mocs_compilation.o: smctl_autogen/mocs_compilation.cpp.o
-.PHONY : smctl_autogen/mocs_compilation.o
+mathd_autogen/mocs_compilation.o: mathd_autogen/mocs_compilation.cpp.o
+.PHONY : mathd_autogen/mocs_compilation.o
 
 # target to build an object file
-smctl_autogen/mocs_compilation.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/smctl.dir/build.make CMakeFiles/smctl.dir/smctl_autogen/mocs_compilation.cpp.o
-.PHONY : smctl_autogen/mocs_compilation.cpp.o
+mathd_autogen/mocs_compilation.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mathd.dir/build.make CMakeFiles/mathd.dir/mathd_autogen/mocs_compilation.cpp.o
+.PHONY : mathd_autogen/mocs_compilation.cpp.o
 
-smctl_autogen/mocs_compilation.i: smctl_autogen/mocs_compilation.cpp.i
-.PHONY : smctl_autogen/mocs_compilation.i
+mathd_autogen/mocs_compilation.i: mathd_autogen/mocs_compilation.cpp.i
+.PHONY : mathd_autogen/mocs_compilation.i
 
 # target to preprocess a source file
-smctl_autogen/mocs_compilation.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/smctl.dir/build.make CMakeFiles/smctl.dir/smctl_autogen/mocs_compilation.cpp.i
-.PHONY : smctl_autogen/mocs_compilation.cpp.i
+mathd_autogen/mocs_compilation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mathd.dir/build.make CMakeFiles/mathd.dir/mathd_autogen/mocs_compilation.cpp.i
+.PHONY : mathd_autogen/mocs_compilation.cpp.i
 
-smctl_autogen/mocs_compilation.s: smctl_autogen/mocs_compilation.cpp.s
-.PHONY : smctl_autogen/mocs_compilation.s
+mathd_autogen/mocs_compilation.s: mathd_autogen/mocs_compilation.cpp.s
+.PHONY : mathd_autogen/mocs_compilation.s
 
 # target to generate assembly for a file
-smctl_autogen/mocs_compilation.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/smctl.dir/build.make CMakeFiles/smctl.dir/smctl_autogen/mocs_compilation.cpp.s
-.PHONY : smctl_autogen/mocs_compilation.cpp.s
+mathd_autogen/mocs_compilation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mathd.dir/build.make CMakeFiles/mathd.dir/mathd_autogen/mocs_compilation.cpp.s
+.PHONY : mathd_autogen/mocs_compilation.cpp.s
 
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
 # target to build an object file
 src/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/smctl.dir/build.make CMakeFiles/smctl.dir/src/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mathd.dir/build.make CMakeFiles/mathd.dir/src/main.cpp.o
 .PHONY : src/main.cpp.o
 
 src/main.i: src/main.cpp.i
@@ -199,7 +199,7 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/smctl.dir/build.make CMakeFiles/smctl.dir/src/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mathd.dir/build.make CMakeFiles/mathd.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -207,7 +207,7 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/smctl.dir/build.make CMakeFiles/smctl.dir/src/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mathd.dir/build.make CMakeFiles/mathd.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
 # Help Target
@@ -219,12 +219,12 @@ help:
 	@echo "... codegen"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... smctl_autogen"
-	@echo "... smctl_autogen_timestamp_deps"
-	@echo "... smctl"
-	@echo "... smctl_autogen/mocs_compilation.o"
-	@echo "... smctl_autogen/mocs_compilation.i"
-	@echo "... smctl_autogen/mocs_compilation.s"
+	@echo "... mathd_autogen"
+	@echo "... mathd_autogen_timestamp_deps"
+	@echo "... mathd"
+	@echo "... mathd_autogen/mocs_compilation.o"
+	@echo "... mathd_autogen/mocs_compilation.i"
+	@echo "... mathd_autogen/mocs_compilation.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

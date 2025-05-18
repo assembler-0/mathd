@@ -1,1 +1,2 @@
-smctl/build/*
+mathd/build/*
+mathd/mathd_gui/*

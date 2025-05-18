@@ -1,0 +1,1 @@
+/usr/bin/clang++ -Xlinker --dependency-file=CMakeFiles/mathd.dir/link.d CMakeFiles/mathd.dir/mathd_autogen/mocs_compilation.cpp.o CMakeFiles/mathd.dir/src/main.cpp.o -o bin/mathd  /usr/lib/libQt5Widgets.so.5.15.16 /usr/lib/libQt5Gui.so.5.15.16 /usr/lib/libQt5Core.so.5.15.16
