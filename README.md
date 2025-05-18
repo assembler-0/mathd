@@ -19,7 +19,7 @@
 
 ## 🧰 Requirements
 
-- C++17 or newer
+- C++20 or newer
 - [CLI11](https://github.com/CLIUtils/CLI11) (included or submodule)
 - [CMake](https://cmake.org/) >= 4.0
 
